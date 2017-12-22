@@ -1,0 +1,103 @@
+package Sintatico;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class GramaticaCodificada {
+    private Map<Integer, String[]> regrasGramatica = new HashMap<Integer, String[]>();
+    
+     public GramaticaCodificada() {
+        regrasGramatica.put(1 , new String[]{"2","10","36","49","50","51","35"});
+        regrasGramatica.put(2 , new String[]{"7","100","52","38","53","107","37","54"});
+        regrasGramatica.put(3 , new String[]{"15"});
+        regrasGramatica.put(4 , new String[]{"15"});
+        regrasGramatica.put(5 , new String[]{"40","7","100","52"});
+        regrasGramatica.put(6 , new String[]{"12"});
+        regrasGramatica.put(7 , new String[]{"17"});
+        regrasGramatica.put(8 , new String[]{"3"});
+        regrasGramatica.put(9 , new String[]{"23"});
+        regrasGramatica.put(10, new String[]{"15"});
+        regrasGramatica.put(11, new String[]{"55","38","53","107","37","54"});
+        regrasGramatica.put(12, new String[]{"7","52"});
+        regrasGramatica.put(13, new String[]{"56","7","57","36","49","50","51","4","43","58","42","35","50"});
+        regrasGramatica.put(14, new String[]{"12"});
+        regrasGramatica.put(15, new String[]{"2"});
+        regrasGramatica.put(16, new String[]{"23"});
+        regrasGramatica.put(17, new String[]{"17"});
+        regrasGramatica.put(18, new String[]{"3"});
+        regrasGramatica.put(19, new String[]{"15"});
+        regrasGramatica.put(20, new String[]{"5"});
+        regrasGramatica.put(21, new String[]{"6"});
+        regrasGramatica.put(22, new String[]{"7"});
+        regrasGramatica.put(23, new String[]{"8"});
+        regrasGramatica.put(24, new String[]{"9"});
+        regrasGramatica.put(25, new String[]{"15"});
+        regrasGramatica.put(26, new String[]{"15"});
+        regrasGramatica.put(27, new String[]{"43","59","42"});
+        regrasGramatica.put(28, new String[]{"53","60"});
+        regrasGramatica.put(29, new String[]{"37","53","60"});
+        regrasGramatica.put(30, new String[]{"15"});
+        regrasGramatica.put(31, new String[]{"13","61","37","62","18"});
+        regrasGramatica.put(32, new String[]{"15"});
+        regrasGramatica.put(33, new String[]{"61","37","62"});
+        regrasGramatica.put(34, new String[]{"7","29","63"});
+        regrasGramatica.put(35, new String[]{"9","29","63" });
+        regrasGramatica.put(36, new String[]{"8","29","63"});
+        regrasGramatica.put(37, new String[]{"63","29","63"});
+        regrasGramatica.put(38, new String[]{"15" });
+        regrasGramatica.put(39, new String[]{"24","7","64"});
+        regrasGramatica.put(40, new String[]{"15"});
+        regrasGramatica.put(41, new String[]{"43","65","66","42"});
+        regrasGramatica.put(42, new String[]{"15"});
+        regrasGramatica.put(43, new String[]{"40","65","66"});
+        regrasGramatica.put(44, new String[]{"5"});
+        regrasGramatica.put(45, new String[]{"9"});
+        regrasGramatica.put(46, new String[]{"6"});
+        regrasGramatica.put(47, new String[]{"8"});
+        regrasGramatica.put(48, new String[]{"7"});
+        regrasGramatica.put(49, new String[]{"14","43","7","102","67","42","36","61","37","62","35","68"});
+        regrasGramatica.put(50, new String[]{"19","36","61","37","62","35"});
+        regrasGramatica.put(51, new String[]{"15"});
+        regrasGramatica.put(52, new String[]{"1","43","67","42","36","61","37","62","35"});
+        regrasGramatica.put(53, new String[]{"28","69"});
+        regrasGramatica.put(54, new String[]{"45","69"});
+        regrasGramatica.put(55, new String[]{"27","69"});
+        regrasGramatica.put(56, new String[]{"26","69"});
+        regrasGramatica.put(57, new String[]{"32","69"});
+        regrasGramatica.put(58, new String[]{"30","69"});
+        regrasGramatica.put(59, new String[]{"5"});
+        regrasGramatica.put(60, new String[]{"6"});
+        regrasGramatica.put(61, new String[]{"9"});
+        regrasGramatica.put(62, new String[]{"8"});
+        regrasGramatica.put(63, new String[]{"7"});
+        regrasGramatica.put(64, new String[]{"16","43","7","29","69","37","7","67","37","70","42","36","61","37","62","35"});
+        regrasGramatica.put(65, new String[]{"33","5"});
+        regrasGramatica.put(66, new String[]{"46","5"});
+        regrasGramatica.put(67, new String[]{"20","36","61","37","62","35","1","43","7","67","42" });
+        regrasGramatica.put(68, new String[]{"22","25","7","102"});
+        regrasGramatica.put(69, new String[]{"21","31","11","71"});
+        regrasGramatica.put(70, new String[]{"15"});
+        regrasGramatica.put(71, new String[]{"31","7","72","71"});
+        regrasGramatica.put(72, new String[]{"31","11","71"});
+        regrasGramatica.put(73, new String[]{"15"});
+        regrasGramatica.put(74, new String[]{"40","7","72"});
+        regrasGramatica.put(75, new String[]{"73","74"});
+        regrasGramatica.put(76, new String[]{"24","7","64"});
+        regrasGramatica.put(77, new String[]{"34","73","74"});
+        regrasGramatica.put(78, new String[]{"47","73","74"});
+        regrasGramatica.put(79, new String[]{"15"});
+        regrasGramatica.put(80, new String[]{"75","76"});
+        regrasGramatica.put(81, new String[]{"15"});
+        regrasGramatica.put(82, new String[]{"41","75","76"});
+        regrasGramatica.put(83, new String[]{"39","75","76"});
+        regrasGramatica.put(84, new String[]{"5","110"});
+        regrasGramatica.put(85, new String[]{"6"});
+        regrasGramatica.put(86, new String[]{"7"});
+        regrasGramatica.put(87, new String[]{"9","110"});
+        regrasGramatica.put(88, new String[]{"8","110"});
+        regrasGramatica.put(89, new String[]{"43","63","42"});
+    } 
+    public String[] getGramatica(int regra){
+         return regrasGramatica.get(regra);
+    }
+}

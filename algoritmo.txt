@@ -1,0 +1,35 @@
+var x, a;
+x = piha.pop();
+a = frase[i];
+
+while(){
+
+   if(x == ""){
+      var aux = pilha.pop();
+      x = aux;
+   }else{
+
+     if(x == terminal){
+        if(x == a){
+	   var aux = pilha.pop();
+	   voltar para o lexico;
+	}else{
+	   alert("ERRO");
+	   return;
+	}
+     }else{
+	if((x,a) != null){
+	   var aux = pilha.pop();
+	   colocar o conteudo da regra na pilha
+	   x = aux;
+	}else{
+	   alert("ERRO");
+	   return;
+	}
+     }
+   }
+
+
+
+
+}

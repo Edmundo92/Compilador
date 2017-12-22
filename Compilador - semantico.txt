@@ -1,0 +1,57 @@
+definir numeros para acoes semanticas
+ex: nome_var, depois do nome de var devo colocar um identificador para as ações semantica
+
+exemplo para identificar nome de var repetidas.
+nome de var o simbolo é 7, logo na tabela da gramatica codificada, devo colocar o identificador da ação semantica, logo apos o simbolo de nome_de_var
+
+exemplo: 7(nome_var) 100(identificador) demais numeros que serão empilhados
+
+
+
+Alterar a gramatica codificada com os simbolos das regras semanticas.
+Obs: alterar tb o algoritmo sintatico.
+
+
+
+
+tabela:
+
+nome- nome da var ou nome da função
+categoria - se é nome de uma variavel ou nome de uma função
+tipo - int, float, string
+nível - global ou local
+
+nome  |  categoria  |  tipo  | nível
+
+
+no exemplo, se o simbolo de entrada for igual ao topo da pilha e é uma regra que eu estabeleci, devo guardar esse valor ou nome na tabela.
+
+7 erros semanticos:
+- nomes de variaveis repetidos (100)
+- nomes de funções repetidos (101)
+- variaveis usadas que nao foram declaradas (102)
+- var de um determinado tipo que receber um outro valor (103)
+- definir uma função com um determinado numero de parametros e ao invocar, colocar mais doque foi definido. (104)
+ex: float media(nun 1. num 2){}
+ao invocar: media(num1, num2, num3)
+- a operação entre um string e um int (105)
+ex:cout<<" 3 + $Edmundo$";
+- declarar uma função com uma ordem especifica dos parametros e ao invocar inver a ordem dos tipos dos parametros (106)
+ex: function p(x:integer, y:float);
+ao invocar: p(x:integer, y:integer);
+
+
+
+se X == ação semantica
+   executa a ação
+retira o topo
+
+
+o que fazer:
+- 7 erros semanticos que vai controlar
+- alterar a gramatica inserindo nela ações semanticas
+- descrever o que fará cada uma destas ações
+- alterar o algoritmo do analisador sintático para que ele possa executar estas ações quando elas estiverem no topo da pilha.
+
+ Na regra 103, usar um contador para contabilizar o numeros de parametros declarados, já ao invocar tb deve ter um contador, no final da invvocação(fechar parenteses),
+ colocar o valor 103, que vai comparar os dois contadores para saber se são iguais ou não
